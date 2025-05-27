@@ -24,3 +24,9 @@ Route::post('/departamentos', [DepartamentoController::class, 'store'])->name('d
 Route::get('/departamentos/{departamento}', [DepartamentoController::class, 'show'])->name('departamentos.show');
 Route::put('/departamentos/{departamento}', [DepartamentoController::class, 'update'])->name('departamentos.update');
 Route::delete('/departamentos/{departamento}', [DepartamentoController::class, 'destroy'])->name('departamentos.destroy');
+
+Route::get('/paises', [PaisController::class, 'index'])->name('paises');
+Route::post('/paises', [PaisController::class, 'store'])->name('paises.store');
+Route::get('/paises/{pais}', [PaisController::class, 'show'])->name('paises.show');
+Route::put('/paises/{pais}', [PaisController::class, 'update'])->name('paises.update');
+Route::delete('/paises/{pais}', [PaisController::class, 'destroy'])->name('paises.destroy');
